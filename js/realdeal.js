@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 contentSections.forEach(section => section.classList.add('hidden'));
+                window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+                });
 
                 const imageInfo = image.getAttribute('image-info');
                 const contentToShow = document.getElementById(`contentsec${imageInfo.slice(1)}`);
